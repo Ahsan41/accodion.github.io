@@ -6,7 +6,7 @@ Acontent.forEach((item,index)=>{
     item.classList.toggle(`open`);
 
     let description = item.querySelector(`.acc-descrition`)
-    console.log(description)
+    
     if(item.classList.contains(open)){
      description.style.height = `${description.scrollHeight}px`;
    }
@@ -14,4 +14,5 @@ Acontent.forEach((item,index)=>{
     description.style.height = "0px";
    }
   })
+  console.log(`description`)
 })
